@@ -10,7 +10,7 @@ function Login({ onSuccess }) {
       return;
     }
 
-    fetch('http://localhost:3000/login', {
+    fetch('https://optiparx-backend.onrender.com/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

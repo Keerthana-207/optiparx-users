@@ -20,7 +20,7 @@ function Register({ onSuccess }) {
     return;
   }
 
-  fetch('http://localhost:3000/register', {
+  fetch('https://optiparx-backend.onrender.com/register', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

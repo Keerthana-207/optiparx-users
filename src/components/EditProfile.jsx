@@ -37,7 +37,7 @@ function EditProfile({ userData, setUserData, onBack }) {
       const body = { email, phone };
       if (newPassword) body.password = newPassword;
 
-      const res = await fetch(`http://localhost:3000/api/users/update-profile/${username}`, {
+      const res = await fetch(`https://optiparx-backend.onrender.com/api/users/update-profile/${username}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
