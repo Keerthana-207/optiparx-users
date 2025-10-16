@@ -1,0 +1,270 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #dff6f0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 400px;
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.btn-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+h2 {
+  color: #2c7a7b;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input, select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background: #2c7a7b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #225e5f;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+.slots {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center; 
+}
+
+
+.slot {
+  padding: 15px;
+  width: 120px;          
+  background: #f0faff;
+  border: 1px solid #2c7a7b;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+
+
+.slot:hover {
+  background: #ccefee;
+}
+
+.slot.reserved {
+  background-color: #ccc !important;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.slot.available {
+  background-color: #8bc34a;
+  color: black;
+}
+
+.slot.selected {
+  background-color: #2196f3;
+  color: white;
+}
+
+
+.method-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#upi-section, #ewallet-section, #cash-section {
+  background: #f8f9fa;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+#upi-qr {
+  margin-top: 10px;
+}
+
+.payment-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.payment-box {
+  background: #f8f9fa;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.toggle-container {
+  padding: 12px 20px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  word-break: break-word;
+}
+
+.container, .edit-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 400px; 
+  min-width: 250px;
+  text-align: center;
+  overflow-x: auto;  
+}
+
+.edit-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.slot-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+ }
+ 
+.booking-history-frame {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 20px;
+  padding-right: 10px;
+  text-align: left;
+}
+
+.booking-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.booking-item:last-child {
+  border-bottom: none;
+}
+
+
+.admin-slot {
+  padding: 12px;
+  min-width: 90px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.admin-slot:hover {
+  transform: scale(1.05);
+}
+
+.admin-slot.vacant {
+  background-color: #d4edda;
+  color: #155724;
+  border-color: #c3e6cb;
+}
+
+.admin-slot.occupied {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-color: #f5c6cb;
+}
+.user-info {
+  border: #225e5f solid;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.container h4 {
+  color: rgb(229, 47, 47);
+}
