@@ -7,7 +7,7 @@ function Dashboard({ userData, onLogout, onNavigate }) {
   useEffect(() => {
     const fetchDeviceMessages = async () => {
       try {
-        const res = await fetch('https://optiparx-users.netlify.app/api/slots/device-messages');
+        const res = await fetch('https://optiparx-backend.onrender.com/api/slots/device-messages');
         const data = await res.json();
         setDeviceMessages(data.messages || []);
       } catch (err) {
