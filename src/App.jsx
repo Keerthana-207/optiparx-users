@@ -7,7 +7,6 @@ import Dashboard from './pages/Dashboard';
 import Slots from './components/Slots';
 import Payment from './components/Payment';
 import FinalPayment from './components/FinalPayment';
-import Admin from './Admin';
 import BookingHistory from './components/BookingHistory';
 import EditProfile from './components/EditProfile';
 
