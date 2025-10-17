@@ -22,7 +22,7 @@ function Slots({ userData, setUserData, onNext, onBack }) {
 
   const fetchSlotConfig = async () => {
     try {
-      const res = await fetch("https://optiparx-backend.onrender.com/api/slots/total-slots"); // ✅ fixed endpoint
+      const res = await fetch("https://optiparx-backend-9gc0lmpqj-keerthana-207s-projects.vercel.app/api/slots/total-slots"); // ✅ fixed endpoint
       const data = await res.json();
       setTotalSlots(data.totalSlots || 0);
       const generatedSlots = Array.from({ length: data.totalSlots }, (_, i) => `Slot ${i + 1}`);
@@ -34,7 +34,7 @@ function Slots({ userData, setUserData, onNext, onBack }) {
 
   const fetchReservedSlots = async () => {
     try {
-      const res = await fetch("https://optiparx-backend.onrender.com/api/slots/reserved-slots");
+      const res = await fetch("https://optiparx-backend-9gc0lmpqj-keerthana-207s-projects.vercel.app/api/slots/reserved-slots");
       const data = await res.json();
       setReservedSlots(data.reservedSlots || []);
     } catch (err) {
@@ -68,7 +68,7 @@ function Slots({ userData, setUserData, onNext, onBack }) {
         duration: userData.duration,
       };
 
-      const res = await fetch("https://optiparx-backend.onrender.com/api/slots/reserve-slot", {
+      const res = await fetch("https://optiparx-backend-9gc0lmpqj-keerthana-207s-projects.vercel.app/api/slots/reserve-slot", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(bookingData),
