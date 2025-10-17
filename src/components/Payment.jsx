@@ -26,7 +26,7 @@ function Payment({ userData, slotConfig, onFinish }) {
     }
 
     try {
-      const res = await fetch("https://optiparx-backend.onrender.com/book", {
+      const res = await fetch("https://optiparx-backend-9gc0lmpqj-keerthana-207s-projects.vercel.app/book", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
