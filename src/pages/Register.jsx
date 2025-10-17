@@ -20,7 +20,7 @@ function Register({ onSuccess }) {
     return;
   }
 
-  fetch('https://optiparx-backend.onrender.com/register', {
+  fetch('https://optiparx-backend-9gc0lmpqj-keerthana-207s-projects.vercel.app/register', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
