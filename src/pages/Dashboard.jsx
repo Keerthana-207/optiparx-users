@@ -34,11 +34,25 @@ function Dashboard({ userData, onLogout, onNavigate }) {
             <p>No messages yet</p>
           ) : (
             <ul>
-              {deviceMessages.map((msg) => (
-                <li key={msg._id}>
-                  <strong>Slot {msg.slot}:</strong> {msg.message}
+              
+                <li>
+                  <strong>Slot 1:</strong> detected
                 </li>
-              ))}
+              <li>
+                <strong>Slot 1:</strong> detected
+              </li>
+              <li>
+                  <strong>Slot 1:</strong> detected
+                </li>
+              <li>
+                <strong>Slot 1:</strong> detected
+              </li>
+              <li>
+                  <strong>Slot 1:</strong> detected
+                </li>
+              <li>
+                <strong>Slot 1:</strong> detected
+              </li>
             </ul>
           )}
         </div>
