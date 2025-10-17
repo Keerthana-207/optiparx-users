@@ -10,7 +10,7 @@ function Login({ onSuccess }) {
       return;
     }
 
-    fetch('https://optiparx-backend-9gc0lmpqj-keerthana-207s-projects.vercel.app/login', {
+    fetch('https://optiparx-backend.onrender.com/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
