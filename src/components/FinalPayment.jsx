@@ -35,7 +35,7 @@ function FinalPayment({ userData, onFinish }) {
     };
 
     try {
-      const res = await fetch("https://optiparx-backend-9gc0lmpqj-keerthana-207s-projects.vercel.app/book", {
+      const res = await fetch("https://optiparx-backend.onrender.com/book", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
