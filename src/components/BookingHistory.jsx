@@ -26,7 +26,7 @@ function BookingHistory({ userData, onBack }) {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const res = await fetch(`https://optiparx-backend-9gc0lmpqj-keerthana-207s-projects.vercel.app/api/slots/bookings/${userData.username}`);
+        const res = await fetch(`https://optiparx-backend.onrender.com/api/slots/bookings/${userData.username}`);
         const data = await res.json();
         setBookings(data.bookings || []);
       } catch (error) {
@@ -44,7 +44,7 @@ function BookingHistory({ userData, onBack }) {
     if (!window.confirm("Are you sure you want to cancel this booking?")) return;
 
     try {
-      const res = await fetch(`https://optiparx-backend-9gc0lmpqj-keerthana-207s-projects.vercel.app/api/slots/cancel-booking/${bookingId}`, {
+      const res = await fetch(`https://optiparx-backend.onrender.com/api/slots/cancel-booking/${bookingId}`, {
         method: "DELETE",
       });
 
